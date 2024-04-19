@@ -1,4 +1,4 @@
-# PHBS_MLF_2024_Project: Credit Risk Prediction
+<img width="1207" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/0d190497-e124-499d-a23a-ee9727a10fb3"># PHBS_MLF_2024_Project: Credit Risk Prediction
 ## Data Description:
 <img width="989" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/cd215a8c-ad22-4195-8710-84ccb77df8f7">
 
@@ -65,7 +65,9 @@
 ## Autoencoder 
  ### Autoencoder Network Structure
 Here is the structure of a typical Autoencoder (Source: MLF_Finance_Research.pdf):
-<img src=".\Figures\AE结构.png"/>
+
+<img width="667" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/dce3dad2-4d49-411b-bf98-798fcef15878">
+
 
 - Unsupervised NN, fully connected.
 - Encoder + decoder, input dimension = output dimension.
@@ -93,8 +95,9 @@ Using autoencoder in different feature modules, we have L1Loss:
 
 Another possible model for anomaly detection is GAN (Generative Adversarial Network).
 
-![v2-48a6a2a8b213f4bd52dfb694ad292f00_720w.png](Figures%2Fv2-48a6a2a8b213f4bd52dfb694ad292f00_720w.png)
-![v2-5ca6a701d92341b8357830cc176fb8a3_1440w.png](Figures%2Fv2-5ca6a701d92341b8357830cc176fb8a3_1440w.png)
+<img width="1211" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d03afdc1-7a4c-4b53-9179-f362a0d1e6f6">
+<img width="1211" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/a8afde4b-18ab-40d0-b079-22ae0eca2fa6">
+
 
 - Generator and discriminator. 
 - Generator generates fake sample from random noise.
