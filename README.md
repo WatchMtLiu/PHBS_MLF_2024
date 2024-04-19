@@ -2,8 +2,9 @@
 ## Data Description:
 <img width="989" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/cd215a8c-ad22-4195-8710-84ccb77df8f7">
 
-y: ModelChoice_Default_Flag (0: no risk; 1: have risk)\\
-segment: Site, Industry(3 dummy var), Age_of_Company_in_Month
+1. y: ModelChoice_Default_Flag (0: no risk; 1: have risk)
+2. segment: Site, Industry(3 dummy var), Age_of_Company_in_Month
+3. X: 3 modulars(financial_variables, internal_behavior_variables, bureau_variables)
 
 ## Basic Framework
 ### Thought: 
