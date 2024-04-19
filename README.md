@@ -48,9 +48,12 @@ Credit Risk Prediction
    <img width="996" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d21f1005-7286-440a-9084-7701a465c676">
    
 4. For each segment, Use ['Age_of_Company_in_Years', 'modular0', 'modular1', 'modular2'] as input, firstly use **knn-imputer** to fill Nan inside each segment, then build logistic model.
-5. Model effect on testset:
-   
-   <img width="432" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/f6f03e19-988e-4187-a4ad-375634a138dd">
+5. Model effect on testset: Test ROC AUC = 0.5273
+
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/a56c10d4-62eb-4339-a161-b567ea546c76)
+
+   <img width="434" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d6a6df67-2b57-44d8-9a47-14e2a3f42a7b">
+
 
 ### Model2 : Deal with outliers and do PCA inside each modular variables.
 1. There exists great **corelation** inside modular variables, partly because of existence of **outliers**.
