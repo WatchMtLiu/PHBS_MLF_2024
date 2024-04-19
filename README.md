@@ -26,11 +26,11 @@ Credit Risk Prediction
 1. turn 'Age_of_Company_in_Month' into 'Age_of_Company_in_Year' and divide it up into 'Age_Category'
    <img width="269" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/eb609232-f1a9-47ae-935a-c42d339df4e5">
    
-2. Use Site and Industry as Segment variables, age is saved to use in modular integration for segments.
+2. Use Site and Industry as Segment variables, **age of Company** is saved to use in modular integration for segments.
    
    <img width="151" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/41aaf10f-c9dd-438c-ac0f-83824b7ce53a">
 
-4. Stratified random sample by ['ModelChoice_Default_Flag', 'Segment2'], get X_train, X_test, y_train, y_test
+4. **Stratified random sample** by ['ModelChoice_Default_Flag', 'Segment2'], get X_train, X_test, y_train, y_test
 
 ### Baseline model
 1. Do one-hot encoding
@@ -43,8 +43,8 @@ Credit Risk Prediction
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/382c5eea-9e9f-4691-bf7e-a93430051635)
 
 ### Model1 : XGBoost + Logistic
-1. Do RandomOverSampler because imbalance.
-2. Also use XGBoost and optuna and 5-fold cv to find optimal model for each groups of modular variables, obtaining 3 prediction probability as label 1 for each rows. Insider this XGBoost, we set imbalance-weight.
+1. Do **RandomOverSample** because imbalance.
+2. Also use XGBoost and optuna and 5-fold cv to find optimal model for each groups of modular variables, obtaining 3 prediction probability as label 1 for each rows. Inside this XGBoost, we set **imbalance-weight**.
    <img width="996" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d21f1005-7286-440a-9084-7701a465c676">
    
 4. For each segment, Use ['Age_of_Company_in_Years', 'modular0', 'modular1', 'modular2'] as input, firstly use **knn-imputer** to fill Nan inside each segment, then build logistic model.
@@ -53,7 +53,7 @@ Credit Risk Prediction
    <img width="432" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/f6f03e19-988e-4187-a4ad-375634a138dd">
 
 ### Model2 : Deal with outliers and do PCA inside each modular variables.
-1. There exists great corelation inside modular variables, partly because of existence of outliers.
+1. There exists great **corelation** inside modular variables, partly because of existence of **outliers**.
 
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/3dd77052-3cee-4726-b52d-77b55908d137)
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d2149c4b-622d-4934-8232-cadbfa338bd8)
@@ -61,7 +61,7 @@ Credit Risk Prediction
 
 2. So we deal with outliers for trainset firstly, replace outliers with boundary values
 3. Then for each group of moduler variables, we do min-max scaling and use knn-imputer to fill missing values.
-4. Inside each group of moduler variables, we do pca and reserve some important pcas.
+4. Inside each group of moduler variables, we do **pca** and reserve some important pcas.
    pca_components = {'financial_variables': 10, 'internal_behavior_variables': 15, 'bureau_variables': 25}
 
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/6dc557ea-405e-4d25-8616-6be3ce17b0ea)
