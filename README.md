@@ -72,7 +72,7 @@ Credit Risk Prediction
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/949e83f3-2f99-4f84-8a6a-76aad3d72361)
 
 5. do other thing same as model2.
-6. Model effect: still running.
+6. Model effect: still running. Hope it can be better.
    
 
 ## Autoencoder 
