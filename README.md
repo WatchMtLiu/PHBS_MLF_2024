@@ -34,7 +34,7 @@
 
 ### Model1 : XGBoost + Logistic
 1. Do RandomOverSampler because imbalance.
-2. Also use XGBoost and optuna and 5-fold cv to find optimal model for each groups of modular variables, obtaining 3 prediction probability as label 1 for each rows.
+2. Also use XGBoost and optuna and 5-fold cv to find optimal model for each groups of modular variables, obtaining 3 prediction probability as label 1 for each rows. Insider this XGBoost, we set imbalance-weight.
    <img width="996" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d21f1005-7286-440a-9084-7701a465c676">
    
 4. For each segment, Use ['Age_of_Company_in_Years', 'modular0', 'modular1', 'modular2'] as input, firstly use **knn-imputer** to fill Nan inside each segment, then build logistic model.
@@ -49,7 +49,17 @@
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d2149c4b-622d-4934-8232-cadbfa338bd8)
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/f3208435-ae36-45ff-9003-0c6fe440fc73)
 
+2. So we deal with outliers for trainset firstly, replace outliers with boundary values
+3. Then for each group of moduler variables, we do min-max scaling and use knn-imputer to fill missing values.
+4. Inside each group of moduler variables, we do pca and reserve some important pcas.
+   pca_components = {'financial_variables': 10, 'internal_behavior_variables': 15, 'bureau_variables': 25}
 
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/6dc557ea-405e-4d25-8616-6be3ce17b0ea)
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/f4df7ac2-8f93-499a-ba3c-49b9fdf7638d)
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/949e83f3-2f99-4f84-8a6a-76aad3d72361)
+
+5. do other thing same as model2.
+6. Model effect: still running.
 
 ## Autoencoder 
 ### Autoencoder Network Structure
@@ -78,5 +88,8 @@ Using autoencoder in different feature modules, we have L1Loss:
 | Bureau             | 0.1638      | 0.2125       | 29.7%  |
 
 
+## To-do
+1. Under-smapling + Over-sampling
+2. Use method based on objective function
+3. Maybe use other model which can deal with imbalance problem better.
    
-
