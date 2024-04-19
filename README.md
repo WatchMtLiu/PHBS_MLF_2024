@@ -91,6 +91,12 @@ Using autoencoder in different feature modules, we have L1Loss:
 | Internal Behaviour | 0.3212      | 0.4104       | 27.8%  |
 | Bureau             | 0.1638      | 0.2125       | 29.7%  |
 
+The correlation of $X-\hat{X}$ is as below:
+
+![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/1f70d840-e69c-4b62-a55f-06c8f64cd3d6)
+![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/eed51366-0a37-4aeb-9a26-0d83bd7ce340)
+![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d50cb5ce-8c6c-4463-923d-0ad35278c350)
+
 
 ### Possible Alternatives
 
