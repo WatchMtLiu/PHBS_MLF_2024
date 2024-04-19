@@ -60,9 +60,10 @@
 
 5. do other thing same as model2.
 6. Model effect: still running.
+   
 
 ## Autoencoder 
-### Autoencoder Network Structure
+ ### Autoencoder Network Structure
 Here is the structure of a typical Autoencoder (Source: MLF_Finance_Research.pdf):
 <img src=".\Figures\AE结构.png"/>
 
@@ -88,9 +89,21 @@ Using autoencoder in different feature modules, we have L1Loss:
 | Bureau             | 0.1638      | 0.2125       | 29.7%  |
 
 
+### Possible Alternatives
+
+Another possible model for anomaly detection is GAN (Generative Adversarial Network).
+
+![v2-48a6a2a8b213f4bd52dfb694ad292f00_720w.png](Figures%2Fv2-48a6a2a8b213f4bd52dfb694ad292f00_720w.png)
+![v2-5ca6a701d92341b8357830cc176fb8a3_1440w.png](Figures%2Fv2-5ca6a701d92341b8357830cc176fb8a3_1440w.png)
+
+- Generator and discriminator. 
+- Generator generates fake sample from random noise.
+- Discriminator classify the real sample and the generated sample.
+- A strong discriminator can be used as a classifier of normal and abnormal sample.
+
+
 ## To-do
 1. Under-smapling + Over-sampling
 2. Use method based on objective function
 3. Maybe use other model which can deal with imbalance problem better.
 4. Maybe bagging and replacement sampling with label 1(risk) samples each time.
-   
