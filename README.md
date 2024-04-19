@@ -1,4 +1,4 @@
-<img width="1207" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/0d190497-e124-499d-a23a-ee9727a10fb3"># PHBS_MLF_2024_Project: Credit Risk Prediction
+PHBS_MLF_2024_Project: Credit Risk Prediction
 ## Data Description:
 <img width="989" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/cd215a8c-ad22-4195-8710-84ccb77df8f7">
 
@@ -67,7 +67,6 @@
 Here is the structure of a typical Autoencoder (Source: MLF_Finance_Research.pdf):
 
 <img width="667" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/dce3dad2-4d49-411b-bf98-798fcef15878">
-
 
 - Unsupervised NN, fully connected.
 - Encoder + decoder, input dimension = output dimension.
