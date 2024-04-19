@@ -1,4 +1,12 @@
 PHBS_MLF_2024_Project: Credit Risk Prediction
+
+## Team Member:
+| Name               | Student ID      | 
+|--------------------|-----------------|
+| Zerun Zhu          | 2201111111      | 
+| Fanyuan Ma         | 2301212364      | 
+
+
 ## Data Description:
 <img width="989" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/cd215a8c-ad22-4195-8710-84ccb77df8f7">
 
@@ -93,9 +101,8 @@ Using autoencoder in different feature modules, we have L1Loss:
 
 The correlation of $X-\hat{X}$ is as below:
 
-![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/1f70d840-e69c-4b62-a55f-06c8f64cd3d6)
-![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/eed51366-0a37-4aeb-9a26-0d83bd7ce340)
-![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d50cb5ce-8c6c-4463-923d-0ad35278c350)
+![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/32ba2863-67b7-4be4-bdc1-176d7e17f697)
+![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/ce76106e-6b70-4e0c-bedd-3b1a9ef3dbde)
 
 
 ### Possible Alternatives
