@@ -28,9 +28,11 @@ PHBS_MLF_2024_Project: Credit Risk Prediction
 1. Do one-hot encoding
 2. Use all variables as input for XGBoost model, and use **optuna** to find optimal parameters
 3. Do 5-fold cross validation
-4. Baseline effect on testset: Test ROC AUC = 0.7849
+4. Baseline effect on testset: Test ROC AUC = 0.7512
    
-   <img width="434" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/6a4c7564-54c6-4931-a29b-8ccb0ef1b7a5">
+   <img width="432" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/9941842d-bf33-408a-8745-5a088615feda">
+
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/382c5eea-9e9f-4691-bf7e-a93430051635)
 
 ### Model1 : XGBoost + Logistic
 1. Do RandomOverSampler because imbalance.
