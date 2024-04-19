@@ -1,4 +1,4 @@
-PHBS_MLF_2024_Project: Credit Risk Prediction
+![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/ab764742-141d-44e9-bcf9-7fb931639a26)PHBS_MLF_2024_Project: Credit Risk Prediction
 
 ## Team Member:
 | Name               | Student ID      | 
@@ -100,9 +100,9 @@ Using autoencoder in different feature modules, we have L1Loss:
 | Bureau             | 0.1638      | 0.2125       | 29.7%  |
 
 The correlation of $X-\hat{X}$ is as below:
-
-![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/32ba2863-67b7-4be4-bdc1-176d7e17f697)
-![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/ce76106e-6b70-4e0c-bedd-3b1a9ef3dbde)
+![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/c7d34b06-9117-4d6e-9cd3-e28d4e3b0eb9)
+![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/8afde254-9a18-4224-8f9a-0cc758cf484e)
+![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/92200287-7481-472c-b483-5891f2f4dd8a)
 
 
 ### Possible Alternatives
