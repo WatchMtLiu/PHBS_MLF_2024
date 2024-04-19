@@ -18,7 +18,9 @@ segment: Site, Industry(3 dummy var), Age_of_Company_in_Month
    <img width="269" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/eb609232-f1a9-47ae-935a-c42d339df4e5">
    
 2. Use Site and Industry as Segment variables, age is saved to use in modular integration for segments.
-3. Stratified random sample by ['ModelChoice_Default_Flag', 'Segment2'], get X_train, X_test, y_train, y_test
+   <img width="151" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/41aaf10f-c9dd-438c-ac0f-83824b7ce53a">
+
+4. Stratified random sample by ['ModelChoice_Default_Flag', 'Segment2'], get X_train, X_test, y_train, y_test
 
 ## Baseline model
 1. Do one-hot encoding
