@@ -52,7 +52,6 @@ Credit Risk Prediction
 
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/cc84a4c4-35c1-45ce-aaed-a4944a906e62)
 
-   <img width="434" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d6a6df67-2b57-44d8-9a47-14e2a3f42a7b">
 
 
 ### Model2 : Deal with outliers and do PCA inside each modular variables.
