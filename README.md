@@ -103,7 +103,7 @@ The correlation of $X-\hat{X}$ is as below:
 Another possible model for anomaly detection is GAN (Generative Adversarial Network).
 
 <img width="1211" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d03afdc1-7a4c-4b53-9179-f362a0d1e6f6">
-<img width="1211" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/a8afde4b-18ab-40d0-b079-22ae0eca2fa6">
+<img width="644" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/8a4e11e9-0899-4a8b-b58d-4b155b7dac95">
 
 
 - Generator and discriminator. 
