@@ -50,7 +50,7 @@ Credit Risk Prediction
 4. For each segment, Use ['Age_of_Company_in_Years', 'modular0', 'modular1', 'modular2'] as input, firstly use **knn-imputer** to fill Nan inside each segment, then build logistic model.
 5. Model effect on testset: Test ROC AUC = 0.5273
 
-   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/a56c10d4-62eb-4339-a161-b567ea546c76)
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/cc84a4c4-35c1-45ce-aaed-a4944a906e62)
 
    <img width="434" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d6a6df67-2b57-44d8-9a47-14e2a3f42a7b">
 
