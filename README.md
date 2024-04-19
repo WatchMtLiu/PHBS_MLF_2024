@@ -1,4 +1,4 @@
-![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/ab764742-141d-44e9-bcf9-7fb931639a26)PHBS_MLF_2024_Project: Credit Risk Prediction
+Credit Risk Prediction
 
 ## Team Member:
 | Name               | Student ID      | 
