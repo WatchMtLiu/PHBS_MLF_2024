@@ -51,7 +51,9 @@ Credit Risk Prediction
 5. Model effect on testset: Test ROC AUC = 0.5273
 
    <img width="453" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/70ed51be-1808-440c-8564-8f27596b4a2f">
-   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/b67fe473-57d7-4564-8f1c-2ce838592fad)
+   
+   ![Uploading image.png…]()
+
 
 
 ### Model2 : Deal with outliers and do PCA inside each modular variables.
