@@ -92,4 +92,5 @@ Using autoencoder in different feature modules, we have L1Loss:
 1. Under-smapling + Over-sampling
 2. Use method based on objective function
 3. Maybe use other model which can deal with imbalance problem better.
+4. Maybe bagging and replacement sampling with label 1(risk) samples each time.
    
