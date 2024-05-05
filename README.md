@@ -69,17 +69,20 @@ Credit Risk Prediction
 4. Inside each group of moduler variables, we do **pca** and reserve some important pcas. Before this, we need to do normalization scaling.
    pca_components = {'financial_variables': 10, 'internal_behavior_variables': 15, 'bureau_variables': 20}
 
-   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/b856d9d4-d17e-48fe-8be7-9e34826340ae)
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/288f701d-a76f-4c83-9835-27f0253886af)
 
-   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/56a76123-d097-49e5-b32f-d6e52ff5287d)
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/e3363bd4-ad99-453e-ad44-748cb52f5228)
 
-   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/2521322b-5a8e-43c8-9208-253cb8436c5a)
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/aa9a96ad-1d38-44b0-98fe-78b2b8b73479)
 
 
-6. do other thing same as model2.
-7. Model effect on testset: Test ROC AUC = 0.5090
 
-   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/1f60b1ca-bb31-4686-839a-24fc5a915721)
+6. do other thing same as model2. Build XGboost model for each group of module variables, and then use age information and 3 module models' prediction probability as input, build a logistic model to get final output.
+7. Model effect on testset: Test ROC AUC = 0.5246
+
+  ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/5e9916ab-658a-476b-9da9-ed455c73d473)
+
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/886c7ff8-0e48-4308-a31f-4431d397065a)
 
    
 
