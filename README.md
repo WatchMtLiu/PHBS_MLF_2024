@@ -33,25 +33,28 @@ Credit Risk Prediction
 4. **Stratified random sample** by ['ModelChoice_Default_Flag', 'Segment2'], get X_train, X_test, y_train, y_test
 
 ### Baseline model
-1. Do one-hot encoding
-2. Use all variables as input for XGBoost model, and use **optuna** to find optimal parameters
-3. Do 5-fold cross validation
-4. Baseline effect on testset: Test ROC AUC = 0.7512
+1. Do one-hot encoding.
+2. Use all variables as input for XGBoost model, and use **optuna** to find optimal parameters.
+3. Do 5-fold cross validation.
+4. Baseline effect on testset: Test ROC AUC = 0.7744
    
-   <img width="432" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/9941842d-bf33-408a-8745-5a088615feda">
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/b2d3b83b-4fe3-421c-9437-9203cd8f2686)
 
-   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/382c5eea-9e9f-4691-bf7e-a93430051635)
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/e5c82424-0300-4cc2-8d6a-34401d36697d)
+
 
 ### Model1 : XGBoost + Logistic
-1. Do **RandomOverSample** because imbalance.
+1. Do **RandomOverSample** because of imbalance problem.
 2. Also use XGBoost and optuna and 5-fold cv to find optimal model for each groups of modular variables, obtaining 3 prediction probability as label 1 for each rows. Inside this XGBoost, we set **imbalance-weight**.
    <img width="996" alt="image" src="https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d21f1005-7286-440a-9084-7701a465c676">
    
-4. For each segment, Use ['Age_of_Company_in_Years', 'modular0', 'modular1', 'modular2'] as input, firstly use **knn-imputer** to fill Nan inside each segment, then build logistic model.
+4. For each segment, Use ['Age_of_Company_in_Years', 'modular0', 'modular1', 'modular2'] as input, firstly use **knn-imputer** to fill Nan inside each segment, then build **logistic** model. Pay attention to record knn-imputer models to do same dealing with testset later.
 5. Model effect on testset: Test ROC AUC = 0.5246
 
-   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/6def9a77-d5ef-451d-be58-76340a53b029)
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/4cde544c-783a-46eb-b476-c02346b7bb30)
 
+   ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/fec6b6a1-2e79-4540-a1d4-693d45547a07)
+   
 
 
 ### Model2 : Deal with outliers and do PCA inside each modular variables.
@@ -61,10 +64,10 @@ Credit Risk Prediction
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/d2149c4b-622d-4934-8232-cadbfa338bd8)
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/f3208435-ae36-45ff-9003-0c6fe440fc73)
 
-2. So we deal with outliers for trainset firstly, **replace outliers with boundary quantile values**.
-3. Then for each group of moduler variables, we do min-max scaling and use knn-imputer to fill missing values.
-4. Inside each group of moduler variables, we do **pca** and reserve some important pcas.
-   pca_components = {'financial_variables': 10, 'internal_behavior_variables': 15, 'bureau_variables': 25}
+2. So we deal with outliers for trainset firstly, **replace outliers with boundary quantile values**, and record these values to do same dealing with testset later.
+3. Then for each group of moduler variables, we do **min-max scaling** firstly, so that knn-imputer can treat every variable fairly. Then use knn-imputer to fill missing values.
+4. Inside each group of moduler variables, we do **pca** and reserve some important pcas. Before this, we need to do normalization scaling.
+   pca_components = {'financial_variables': 10, 'internal_behavior_variables': 15, 'bureau_variables': 20}
 
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/b856d9d4-d17e-48fe-8be7-9e34826340ae)
 
