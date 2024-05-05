@@ -106,7 +106,7 @@ I think for a 10-dim data, XGBoost is too much, so I also48se logistic model her
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/54ff01cf-335c-4c2f-a558-8d219e353a8e)
 
 
-## Thought
+## Summary
 I think maybe autoencoder is a strong tool. I also found related paper in credit risk prediction using it. But here its effect is not so good. The primary problem should be the dimension reducing to 10 dim. It's too low. It lost too much information. I think maybe 30-50 is more appropriate. And still, baseline XGboost model is strong and best. 
 
 
