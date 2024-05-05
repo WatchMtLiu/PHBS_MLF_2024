@@ -85,7 +85,8 @@ Credit Risk Prediction
    ![image](https://github.com/WatchMtLiu/PHBS_MLF_2024/assets/151809533/886c7ff8-0e48-4308-a31f-4431d397065a)
 
    
-
+### Model3: Do dimensionality reduction use autoencoder and build XGboost model.
+1. 
 ## Autoencoder 
  ### Autoencoder Network Structure
 Here is the structure of a typical Autoencoder (Source: MLF_Finance_Research.pdf):
